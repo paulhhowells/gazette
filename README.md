@@ -7,12 +7,15 @@ When featuring a large image with a small chunk of related text, there is a comm
 
 Taking a 'content first' approach has lead to three layouts, targetted at a chunk of content defined as: 'a large main image, with a smaller halfpennyworth of text'.  You are likely to want to change the breakpoints according to the font-sizes and image proportions that you use.
 
-	1. At the narrowest width lines of text would be harder to read if they must shortened by sharing the page width with the image. Each item of content thus has full width and is stacked in a single vertical column.
-	2. Once a readable line of text is able to share the page width with an image (that is similarly not too narrow) then the text wraps to the left and under the image.
-	3. When the text flowing under the image becomes too wide to comfortably read then it is confined to the fixed width left hand column. The image scales to fill the remaining horizontal space.
+1. At the narrowest width lines of text would be harder to read if they must shortened by sharing the page width with the image. Each item of content thus has full width and is stacked in a single vertical column.
+2. Once a readable line of text is able to share the page width with an image (that is similarly not too narrow) then the text wraps to the left and under the image.
+3. When the text flowing under the image becomes too wide to comfortably read then it is confined to the fixed width left hand column. The image scales to fill the remaining horizontal space.
+
+## to do
+[] add Display Suite template
 
 
-
+## footnotes
 [1]: gazette |gəˈzet|
 1. noun, a journal or newspaper.
 ORIGIN early 17th cent.: via French from Italian gazzetta, originally Venetian gazeta de la novità ‘a halfpennyworth of news’ (because the news-sheet sold for a gazeta, a Venetian coin of small value).
