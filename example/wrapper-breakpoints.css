@@ -1,0 +1,90 @@
+/* 
+ * print out the last breakpoint
+ * 
+ * use for prototyping & demo pages
+ *
+ */
+.wrapper:before {
+	font-size: 0.6875em;
+	padding-left: 15px;
+}
+@media only screen and (max-width: 320px) {
+	.wrapper:before {
+		content: "sub 320";
+	}
+}
+@media only screen and (min-width: 320px) {
+	.wrapper:before {
+		content: "min 320";
+	}
+}
+@media only screen and (min-width: 360px) {
+	.wrapper:before {
+		content: "min 360";
+	}
+}
+@media only screen and (min-width: 400px) {
+	.wrapper:before {
+		content: "min 400";
+	}
+}
+@media only screen and (min-width: 440px) {
+	.wrapper:before {
+		content: "min 440";
+	}
+}
+@media only screen and (min-width: 480px) {
+	.wrapper:before {
+		content: "min 480";
+	}
+}
+@media only screen and (min-width: 512px) {
+	.wrapper:before {
+		content: "min 512";
+	}
+}
+@media only screen and (min-width: 560px) {
+	.wrapper:before {
+		content: "min 560";
+	}
+}
+@media only screen and (min-width: 640px) {
+	.wrapper:before {
+		content: "min 640";
+	}
+}
+@media only screen and (min-width: 720px) {
+	.wrapper:before {
+		content: "min 720";
+	}
+}
+@media only screen and (min-width: 800px) {
+	.wrapper:before {
+		content: "min 800";
+	}
+}
+@media only screen and (min-width: 880px) {
+	.wrapper:before {
+		content: "min 880";
+	}
+}
+@media only screen and (min-width: 960px) {
+	.wrapper:before {
+		content: "min 960";
+	}
+}
+@media only screen and (min-width: 1024px) {
+	.wrapper:before {
+		content: "min 1024";
+	}
+}
+@media only screen and (min-width: 1040px) {
+	.wrapper:before {
+		content: "min 1040";
+	}
+}
+@media only screen and (min-width: 1120px) {
+	.wrapper:before {
+		content: "min 1120";
+	}
+}	

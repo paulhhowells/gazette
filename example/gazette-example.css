@@ -1,0 +1,76 @@
+/*
+ * some CSS to style this demo page
+ */
+ 
+html,
+body {
+	font-size: 100%;
+	/*
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	*/
+}
+html, body, figure, h1, h2, h3, h4, p, img {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: sans-serif;
+	color: #111;
+	background-color: #ddd;
+}
+h1 {
+	margin: 0.25em 0 0.5em -0.045em;
+	padding: 0 15px 0 15px;
+	font-size: 4em;
+	line-height: 1em;
+	font-weight: bold;
+	letter-spacing: -0.05em;
+	color: #fff;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 960px; /* old browsers */
+}
+@media only screen {
+	.wrapper {
+		width: auto;
+		padding-bottom: 2em;
+	}
+}
+@media only screen and (min-width: 960px) {
+	.wrapper {
+		width: 960px;
+	}
+}
+
+
+/* css from the Unit grid system */
+.u-inner {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+/* typography */
+.f-14-20 {
+	font-size: 0.875em;           /* 16 > 14 */
+	line-height: 1.428571429em;   /* 20 */
+}
+h2 {
+	font-size: 1.714285714em;     /* 24 */
+	line-height: 1.25em;
+	margin-top: 0;
+	margin-bottom: 0.416666667em;
+}
+h3 {
+	font-size: 1.142857143em;     /* 16 */
+	line-height: 1.25em;
+	margin-top: 0;
+	margin-bottom: 0.625em;
+}
+p {
+	margin-bottom: 0.714285714em; /* 10 */
+}

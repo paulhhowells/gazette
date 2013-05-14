@@ -1,0 +1,115 @@
+/*
+ * define Less Constants
+ */						
+@unit-padding-left: 15px;
+@unit-padding-right: 15px;
+@text-column-width: 250px;
+
+
+/**
+ * define Less mixins
+ */ 
+.fix () {
+	_height: 1px;
+	min-height: 1px;	
+	&:after {
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+}		
+
+.box-sizing (@type: border-box) {
+	-o-box-sizing: @type;
+	-ms-box-sizing: @type;
+	-moz-box-sizing: @type;
+	-webkit-box-sizing: @type;
+	box-sizing: @type;
+}
+
+
+/*
+ * Gazette module
+ */
+.gazette {
+	clear: both;
+	margin-bottom: 2em;
+}
+.gazette,
+.gazette-inner {
+	.fix();
+}
+.gazette-figure,
+.gazette-main {
+	.box-sizing();
+}
+.gazette-figure {
+	margin-bottom: 1.5em;
+}
+.gazette-figure > img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+.gazette-figure-caption {
+	font-size: 0.928571429em;   /* 14 > 13 */
+	line-height: 1.538461538em; /* 20 */
+	margin-top: 1em;
+}
+.gazette-main {
+	clear: left; /* to appear below gazette-title */
+}
+
+@media only screen and (min-width: 400px) {
+	.gazette-title {
+		/*
+		fits the title into the left side column
+		use .gazette-title--wide to override
+		*/
+		float: left;
+		width: 50%;
+		margin-right: -@unit-padding-left;
+	}
+	.gazette-figure {
+		float: right;
+		width: 50%;
+		margin-left: @unit-padding-left;
+		margin-bottom: @unit-padding-right;
+		padding-left: @unit-padding-left;
+	}
+}
+@media only screen and (min-width: 560px) {
+	.gazette-inner {
+		padding-left: @text-column-width;
+	}
+	.gazette-title {
+		width: @text-column-width;
+		margin-right: 0;
+		margin-left: -@text-column-width;
+	}
+	.gazette-figure {
+		width: 100%;
+		margin-left: 0;
+	}
+	.gazette-main {
+		float: left;
+		padding-right: @unit-padding-right;
+		margin-left: -@text-column-width;
+		width: @text-column-width;
+	}
+}
+.gazette-title--wide {
+	float: none;
+	width: auto;
+	margin-right: 0;
+	margin-bottom: 0.416666667em;
+}
+
+
+
+
+
+
+
