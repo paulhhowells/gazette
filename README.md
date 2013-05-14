@@ -1,7 +1,7 @@
 gazette
 =======
 
-The Gazette [1] CSS module [2] that presents a main image with a ‘halfpennyworth’ of text to it’s side.  Less &amp; CSS files to use anywhere, and a Drupal Display Suite template that implements it.
+The Gazette [1] CSS module [2] presents a main image with a ‘halfpennyworth’ of text to it’s side.  Less &amp; CSS files to use anywhere, and a Drupal Display Suite template that implements it.
 
 When featuring a large image with a small chunk of related text, there is a commonly used layout which places the text as a diminuitive narrow column of text to one side of the image (which takes up most of the width of the page).  This module of CSS provides that layout at larger screens sizes.
 
@@ -15,9 +15,9 @@ Taking a 'content first' approach has lead to three layouts, targetted at a chun
 [] test Display Suite template
 
 
-### footnotes
+## footnotes
 [1]: gazette |gəˈzet|
 1. noun, a journal or newspaper.
 ORIGIN early 17th cent.: via French from Italian gazzetta, originally Venetian gazeta de la novità ‘a halfpennyworth of news’ (because the news-sheet sold for a gazeta, a Venetian coin of small value).
 
-[2]: I’m using this term as defined in SMACSS (www.smacss.com).
+[2]: Using the term 'module' as defined by SMACSS (www.smacss.com).
