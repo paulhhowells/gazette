@@ -12,10 +12,10 @@ Taking a 'content first' approach has lead to three layouts, targetted at a chun
 3. When the text flowing under the image becomes too wide to comfortably read then it is confined to the fixed width left hand column. The image scales to fill the remaining horizontal space.
 
 ## to do
-[] add Display Suite template
+[] test Display Suite template
 
 
-## footnotes
+### footnotes
 [1]: gazette |gəˈzet|
 1. noun, a journal or newspaper.
 ORIGIN early 17th cent.: via French from Italian gazzetta, originally Venetian gazeta de la novità ‘a halfpennyworth of news’ (because the news-sheet sold for a gazeta, a Venetian coin of small value).
