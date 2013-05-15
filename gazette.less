@@ -3,7 +3,7 @@
  */						
 @unit-padding-left: 15px;
 @unit-padding-right: 15px;
-@text-column-width: 250px;
+@text-column-width: 240px;
 
 
 /**
@@ -35,18 +35,32 @@
  */
 .gazette {
 	clear: both;
+	padding-left: @unit-padding-left;
 	margin-bottom: 2em;
-}
-.gazette,
-.gazette-inner {
+
 	.fix();
 }
 .gazette-figure,
-.gazette-main {
+.gazette-main,
+.gazette-title {
 	.box-sizing();
 }
+.gazette-title,
+.gazette-figure,
+.gazette-main {
+	padding-left: @unit-padding-left;
+	padding-right: @unit-padding-right;	
+}
+.gazette-title,
+.gazette-main {
+	float: left;
+	margin-left: -@text-column-width;
+	width: @text-column-width;
+}
 .gazette-figure {
-	margin-bottom: 1.5em;
+	float: right;
+	width: 100%;
+	margin-bottom: 1.25em;
 }
 .gazette-figure > img {
 	max-width: 100%;
@@ -62,54 +76,49 @@
 	clear: left; /* to appear below gazette-title */
 }
 
-@media only screen and (min-width: 400px) {
+/* single column */
+@media only screen and (max-width: 400px) {
+	.gazette {
+		padding-left: 0;
+	}
+	.gazette-title,
+	.gazette-figure,
+	.gazette-main {
+		float: none;
+		width: auto;
+		margin-left: 0;
+	}
+}
+
+/* full width text and floated figure */
+@media only screen and (min-width: 400px) and (max-width: 560px) {
+	.gazette {
+		padding-left: 0;
+	}
 	.gazette-title {
 		/*
 		fits the title into the left side column
 		use .gazette-title--wide to override
 		*/
-		float: left;
 		width: 50%;
-		margin-right: -@unit-padding-left;
-	}
-	.gazette-figure {
-		float: right;
-		width: 50%;
-		margin-left: @unit-padding-left;
-		margin-bottom: @unit-padding-right;
-		padding-left: @unit-padding-left;
-	}
-}
-@media only screen and (min-width: 560px) {
-	.gazette-inner {
-		padding-left: @text-column-width;
-	}
-	.gazette-title {
-		width: @text-column-width;
-		margin-right: 0;
-		margin-left: -@text-column-width;
-	}
-	.gazette-figure {
-		width: 100%;
+		margin-right: -@unit-padding-right;
 		margin-left: 0;
 	}
+	.gazette-figure {
+		width: 50%;
+		margin-left: @unit-padding-right;
+	}
 	.gazette-main {
-		float: left;
-		padding-right: @unit-padding-right;
-		margin-left: -@text-column-width;
-		width: @text-column-width;
+		float: none;
+		width: auto;
+		margin-left: 0;
 	}
 }
+
+/* title option */
 .gazette-title--wide {
 	float: none;
 	width: auto;
 	margin-right: 0;
 	margin-bottom: 0.416666667em;
 }
-
-
-
-
-
-
-
