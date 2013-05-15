@@ -3,15 +3,16 @@
  */
 .gazette {
 	clear: both;
+	padding-left: 240px;
 	margin-bottom: 2em;
-}
-.gazette,
-.gazette-inner {
+	
+	/*
 	_height: 1px;
 	min-height: 1px;
+	*/
+	/* background-color: rgba(255, 255, 255, 0.3); */
 }	
-.gazette:after,
-.gazette-inner:after {
+.gazette:after {
 	content: ".";
 	display: block;
 	height: 0;
@@ -19,15 +20,29 @@
 	visibility: hidden;
 }
 .gazette-figure,
-.gazette-main {
+.gazette-main,
+.gazette-title {
 	-o-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
+.gazette-title,
+.gazette-figure,
+.gazette-main {
+	padding-left: 15px;
+	padding-right: 15px;	
+}
+.gazette-title {
+	float: left;
+	margin-left: -240px;
+	width: 240px;
+}
 .gazette-figure {
-	margin-bottom: 1.5em;
+	float: right;
+	width: 100%;
+	margin-bottom: 1.2em;
 }
 .gazette-figure > img {
 	max-width: 100%;
@@ -40,47 +55,51 @@
 	margin-top: 1em;
 }
 .gazette-main {
+	float: left;
 	clear: left; /* to appear below gazette-title */
+	margin-left: -240px;
+	width: 240px;
 }
 
-@media only screen and (min-width: 400px) {
+/* single column */
+@media only screen and (max-width: 400px) {
+	.gazette {
+		padding-left: 0;
+	}
+	.gazette-title,
+	.gazette-figure,
+	.gazette-main {
+		float: none;
+		width: auto;
+		margin-left: 0;
+	}
+}
+
+/* full width text and floated figure */
+@media only screen and (min-width: 400px) and (max-width: 560px) {
+	.gazette {
+		padding-left: 0;
+	}
 	.gazette-title {
 		/*
 		fits the title into the left side column
 		use .gazette-title--wide to override
 		*/
-		float: left;
 		width: 50%;
 		margin-right: -15px;
-	}
-	.gazette-figure {
-		float: right;
-		width: 50%;
-		margin-left: 15px;
-		margin-bottom: 10px;
-		padding-left: 15px;
-	}
-}
-@media only screen and (min-width: 560px) {
-	.gazette-inner {
-		padding-left: 250px;
-	}
-	.gazette-title {
-		width: 250px;
-		margin-right: 0;
-		margin-left: -250px;
-	}
-	.gazette-figure {
-		width: 100%;
 		margin-left: 0;
 	}
+	.gazette-figure {
+		width: 50%;
+		margin-left: 15px;
+	}
 	.gazette-main {
-		float: left;
-		padding-right: 15px;
-		margin-left: -250px;
-		width: 250px;
+		float: none;
+		width: auto;
+		margin-left: 0;
 	}
 }
+
 .gazette-title--wide {
 	float: none;
 	width: auto;
