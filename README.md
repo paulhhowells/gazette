@@ -14,14 +14,15 @@ Taking a 'content first' approach has lead to three layouts, targetted at a chun
 ## mark-up
 It may be appropriate to mark-up the Gazette as an Article or Section.  It’s anticipated that the Image may wrapped in a Figure and be supplied with a Figcaption.  If Gazette is given a title it will fit within the left hand text column for scenarios 2 &amp; 3, and precede the Image in scenario 1. If the title is desired to remain full width then the .gazette-title-wrapper--wide class may be appended to the title wrapper.
 ### classes
+* .gazette-title-wrapper
+* .gazette-title-wrapper--wide may be optionally used alongside gazette-title-wrapper
 * .gazette-title
-* .gazette-title--wide
 * .gazette-figure
 * .gazette-figure-caption
 
 		<article class="gazette">
 
-			<div class="gazette-title-wrapper gazette-title-wrapper--wide">
+			<div class="gazette-title-wrapper">
 				<h2 class="gazette-title">Gazette Module</h2>
 			</div>
 			<figure class="gazette-figure">
