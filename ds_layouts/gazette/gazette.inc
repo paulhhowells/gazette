@@ -13,7 +13,6 @@ function ds_gazette() {
       'figure' => t('Figure Image & Caption - flexible'),
     ),
     'css' => TRUE,
-    // Uncomment if you want to include a preview for this layout (example_layout.png)
-    // 'image' => TRUE,
+    'image' => TRUE,
   );
 }

@@ -40,18 +40,18 @@
 
 	.fix();
 }
+.gazette-title-wrapper,
 .gazette-figure,
-.gazette-main,
-.gazette-title {
+.gazette-main {
 	.box-sizing();
 }
-.gazette-title,
+.gazette-title-wrapper,
 .gazette-figure,
 .gazette-main {
 	padding-left: @unit-padding-left;
 	padding-right: @unit-padding-right;	
 }
-.gazette-title,
+.gazette-title-wrapper,
 .gazette-main {
 	float: left;
 	margin-left: -@text-column-width;
@@ -81,7 +81,7 @@
 	.gazette {
 		padding-left: 0;
 	}
-	.gazette-title,
+	.gazette-title-wrapper,
 	.gazette-figure,
 	.gazette-main {
 		float: none;
@@ -95,10 +95,10 @@
 	.gazette {
 		padding-left: 0;
 	}
-	.gazette-title {
+	.gazette-title-wrapper {
 		/*
 		fits the title into the left side column
-		use .gazette-title--wide to override
+		use .gazette-title-wrapper--wide to override
 		*/
 		width: 50%;
 		margin-right: -@unit-padding-right;
@@ -116,7 +116,7 @@
 }
 
 /* title option */
-.gazette-title--wide {
+.gazette-title-wrapper--wide {
 	float: none;
 	width: auto;
 	margin-right: 0;

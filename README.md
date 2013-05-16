@@ -12,7 +12,7 @@ Taking a 'content first' approach has lead to three layouts, targetted at a chun
 3. When the text flowing under the image becomes too wide to comfortably read then it is confined to the fixed width left hand column. The image scales to fill the remaining horizontal space.
 
 ## mark-up
-It may be appropriate to mark-up the Gazette as an Article or Section.  It’s anticipated that the Image may wrapped in a Figure and be supplied with a Figcaption.  If Gazette is given a title it will fit within the left hand text column for scenarios 2 &amp; 3, and precede the Image in scenario 1. If the title is desired to remain full width then the .gazette-title--wide class may be appended.
+It may be appropriate to mark-up the Gazette as an Article or Section.  It’s anticipated that the Image may wrapped in a Figure and be supplied with a Figcaption.  If Gazette is given a title it will fit within the left hand text column for scenarios 2 &amp; 3, and precede the Image in scenario 1. If the title is desired to remain full width then the .gazette-title-wrapper--wide class may be appended to the title wrapper.
 ### classes
 * .gazette-title
 * .gazette-title--wide
@@ -21,8 +21,9 @@ It may be appropriate to mark-up the Gazette as an Article or Section.  It’s a
 
 		<article class="gazette">
 
-			<h2 class="gazette-title gazette-title--wide">Gazette Module</h2>
-			
+			<div class="gazette-title-wrapper gazette-title-wrapper--wide">
+				<h2 class="gazette-title">Gazette Module</h2>
+			</div>
 			<figure class="gazette-figure">
 				<img src="image.png" alt="image description" />
 				<figcaption class="gazette-figure-caption">Caption for image</figcaption>
@@ -36,7 +37,14 @@ It may be appropriate to mark-up the Gazette as an Article or Section.  It’s a
 
 
 ## to do
-[] test Display Suite template
+[] more cross browser testing
+
+## build notes
+I want the Display Suite layout to work once without further requiring configuration through the Admin interface.  To this end I have used regex to append a class to the title tag.  Using regex is not the 'drupal way' so ideally this would in future be achieved using a hook from the ds.api. (At the point of preprocessing the node the Title field is already a string).
+
+It would also be nice to make .gazette-title-wrapper--wide available in the Admin interface as a result of simply placing the gazette folder into ds_layouts.  Attaching a Read Me with instructions to add .gazette-title-wrapper--wide via the Admin interface seems kludgy to me.
+
+.gazette-title is wrapped in .gazette-title-wrapper so that it may use a background graphic that runs the width of the text, and not into left or right padding.
 
 
 ## footnotes
