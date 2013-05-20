@@ -28,6 +28,7 @@ Because Gazette module is comprised of classes you are free to replace the tags 
 * .gazette-figure
 * .gazette-figure-caption
 
+
 		<article class="gazette">
 
 			<div class="gazette-title-wrapper">
