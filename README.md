@@ -44,7 +44,7 @@ It may be appropriate to mark-up the Gazette as an Article or Section.  It’s a
 				
 		</article>
 
-## desktop layout
+## illustration of wide width layout
 ![Image](readme_example_800x600.png?raw=true)
 
 ## to do
