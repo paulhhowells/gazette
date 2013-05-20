@@ -39,7 +39,7 @@
 ?>
 <?php	
 	/*
-		okay, this regex is not 
+		it would be better to replace this regex with ds.api hooks that manipulate the fields before they are turned into strings
 	
 		if $title string contains a class
 			then get contents of class string
@@ -53,14 +53,6 @@
 	$title_class_insert_pattern = '/\s*' . $title_class_insert . '\s*/';
 	$title_wrapper_class_insert = 'gazette-title-wrapper';
 	$title_wrapper_class_insert_pattern = '/\s*' . $title_wrapper_class_insert . '\s*/';
-	
-	// $title = '<h2>Proposal C</h2>';
-	// $title = '<h2 class="">Proposal C</h2>';
-	
-	// $title = '<h2 class="ds-class-3">Proposal C</h2>';
-	// $title = "<h2 class='ds-class-3 DOG'>Proposal D</h2>";
-	
-
 	
 	if (!empty($title)) {
 	

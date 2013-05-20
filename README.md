@@ -1,7 +1,7 @@
 gazette
 =======
 
-Gazette[1] is a CSS module[2] that presents a main image with a ‘halfpennyworth’ of text to it’s side.  
+Gazette[1] is a CSS module[2] that features a main image with a ‘halfpennyworth’ of text to it’s side.  
 
 This github project provides:
 
@@ -44,6 +44,8 @@ It may be appropriate to mark-up the Gazette as an Article or Section.  It’s a
 				
 		</article>
 
+## desktop layout
+![Image](readme_example_800x600.png?raw=true)
 
 ## to do
 [] more cross browser testing
