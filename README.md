@@ -18,9 +18,9 @@ Taking a 'content first' approach has lead to three layouts, each designed for a
 3. When the text flowing under the image becomes too wide to comfortably read then it is confined to the fixed width left hand column. The image scales to fill the remaining horizontal space.
 
 You may wish to change the text column width to match any grid system you are using. (Gazette is designed to play well with the Unit grid system).
-  
+
 ## mark-up
-Because Gazette module comprises classes you are free to replace the tags in the example below with whatever HTML or HTML5 you desire. It may be appropriate to mark-up the Gazette as an Article or Section.  It’s anticipated that the Image may wrapped in a Figure and be supplied with a Figcaption.  If Gazette is given a title it will fit within the left hand text column for scenarios 2 &amp; 3, and precede the Image in scenario 1. If the title is desired to remain full width then the .gazette-title-wrapper--wide class may be appended to the title wrapper.
+Because Gazette module is comprised of classes you are free to replace the tags in the example below with whatever HTML or HTML5 you desire. It may for example be appropriate to mark-up the Gazette as an Article or Section.  It’s anticipated that the Image may wrapped in a Figure tag and be supplied with a Figcaption.  If Gazette is given a title it will fit within the left hand text column for scenarios 2 &amp; 3, and precede the Image in scenario 1. If the title is desired to remain full width then the .gazette-title-wrapper--wide class may be appended to the title wrapper.
 ### classes
 * .gazette-title-wrapper
 * .gazette-title-wrapper--wide may be optionally used alongside gazette-title-wrapper
@@ -38,13 +38,13 @@ Because Gazette module comprises classes you are free to replace the tags in the
 				<figcaption class="gazette-figure-caption">Caption for image</figcaption>
 			</figure>
 			
-			<div class="gazette-main">		
+			<div class="gazette-main">
 				MARK-UP HERE
 			</div>
 				
 		</article>
 
-## illustration of wide width layout
+## illustration of layout (scenario 3 & older browser default)
 ![Image](readme_example_800x600.png?raw=true)
 
 ## to do
